@@ -1,0 +1,81 @@
+[
+    {
+      "bookId": 1,
+      "bookName": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "image": "https://images.unsplash.com/photo-1615419235091-59bf9cbd530b?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "review": "A captivating portrayal of the Jazz Age, portraying the intricate web of love, wealth, and tragedy.",
+      "totalPages": 180,
+      "rating": 4.5,
+      "category": "Classic",
+      "tags": ["Romance", "Tragedy"],
+      "publisher": "Scribner",
+      "yearOfPublishing": 1925
+    },
+    {
+      "bookId": 2,
+      "bookName": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "image": "https://images.booksense.com/images/183/798/9780062798183.jpg",
+      "review": "A poignant narrative that delves deep into issues of racism, morality, and innocence.",
+      "totalPages": 324,
+      "rating": 4.8,
+      "category": "Classic",
+      "tags": ["Social Justice", "Coming-of-Age"],
+      "publisher": "J.B. Lippincott & Co.",
+      "yearOfPublishing": 1960
+    },
+    {
+      "bookId": 3,
+      "bookName": "1984",
+      "author": "George Orwell",
+      "image": "https://sellular.com.bd/wp-content/uploads/2023/10/9789389053739.jpg",
+      "review": "A chilling depiction of a dystopian society, serving as a timeless warning against totalitarianism.",
+      "totalPages": 328,
+      "rating": 4.7,
+      "category": "Dystopian",
+      "tags": ["Political", "Science Fiction"],
+      "publisher": "Secker & Warburg",
+      "yearOfPublishing": 1949
+    },
+    {
+      "bookId": 4,
+      "bookName": "The Catcher in the Rye",
+      "author": "J.D. Salinger",
+      "image": "https://shop.nypl.org/cdn/shop/products/E3E50FBC-C578-4DC2-940B-C99365D8609A_2385a6bd-696a-40cc-8992-7ee455500290_1200x.jpg?v=1601050678",
+      "review": "A raw and honest portrayal of adolescent angst, resonating with readers across generations.",
+      "totalPages": 224,
+      "rating": 4.4,
+      "category": "Coming-of-Age",
+      "tags": ["Identity", "Alienation"],
+      "publisher": "Little, Brown and Company",
+      "yearOfPublishing": 1951
+    },
+    {
+      "bookId": 5,
+      "bookName": "The Hunger Games",
+      "author": "Suzanne Collins",
+      "image": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1590239912l/53320204.jpg",
+      "review": "A gripping tale of survival, courage, and sacrifice, set in a dystopian world.",
+      "totalPages": 374,
+      "rating": 4.6,
+      "category": "Young Adult",
+      "tags": ["Adventure", "Dystopia"],
+      "publisher": "Scholastic Corporation",
+      "yearOfPublishing": 2008
+    },
+    {
+      "bookId": 6,
+      "bookName": "Harry Potter and the Philosopher's Stone",
+      "author": "J.K. Rowling",
+      "image": "https://m.media-amazon.com/images/I/911370CYBTL._AC_UF894,1000_QL80_.jpg",
+      "review": "A magical journey into a world of wizards and wonder, enchanting readers of all ages.",
+      "totalPages": 320,
+      "rating": 4.9,
+      "category": "Fantasy",
+      "tags": ["Magic", "Adventure"],
+      "publisher": "Bloomsbury Publishing",
+      "yearOfPublishing": 1997
+    }
+  ]
+  
