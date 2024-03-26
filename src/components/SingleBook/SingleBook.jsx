@@ -1,11 +1,11 @@
 import { NavLink } from "react-router-dom";
 
 const SingleBook = ({book}) => {
-     const{id,tags,bookName,author,image,category,rating,}=book;
+     const{bookId,tags,bookName,author,image,category,rating,}=book;
   return (
-    <div>
-      <NavLink to={`/book/${id}`}>
-      <div className="card w-96 bg-base-100 shadow-xl">
+    <div className="">
+      <NavLink to={`/book/${bookId}`}>
+      <div className="card bg-gray-200 shadow-xl">
         <figure className="px-10 pt-10">
           <img
             src={image}

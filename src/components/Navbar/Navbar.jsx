@@ -37,7 +37,7 @@ const Navbar = () => {
             }
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl text-[#131313] text-[45px] font-bold">Bookish</a>
+        <a className="btn btn-ghost text-xl text-red-600 text-5xl font-bold">Bookish</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 text-[18px] font-semibold">
@@ -45,8 +45,8 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end gap-5">
-        <a className="btn bg-[#23BE0A] border-none text-[#FFFFFF]">Button</a>
-        <a className="btn bg-[#59C6D2] text-[#FFFFFF] ">Button</a>
+        <a className="btn bg-[#23BE0A] border-none text-[#FFFFFF]">Sign In</a>
+        <a className="btn bg-[#59C6D2] text-[#FFFFFF] ">Sign Up</a>
       </div>
     </div>
   );

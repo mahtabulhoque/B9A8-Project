@@ -18,12 +18,14 @@ const Books = () => {
             <h2 className="text-center py-10 text-[#131313] font-bold text-[40px]">Books : {books.length}</h2>
         </div>
 
-        <div>
+      
+       <div className="grid grid-cols-3 gap-7">
             {
                books.map(book => <SingleBook key={book.id} book={book}></SingleBook> )
             }
         </div>
        </div>
+
     );
 };
 
