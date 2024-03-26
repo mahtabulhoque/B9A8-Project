@@ -4,7 +4,7 @@ import SingleBook from "../SingleBook/SingleBook";
 const Books = () => {
 
     const [books, setBooks]= useState([])
-    console.log(books);
+    // console.log(books);
 
     useEffect(()=>{
         fetch('/bookData.json')
@@ -21,7 +21,7 @@ const Books = () => {
       
        <div className="grid grid-cols-3 gap-7">
             {
-               books.map(book => <SingleBook key={book.id} book={book}></SingleBook> )
+               books.map(book => <SingleBook key={book.bookId} book={book}></SingleBook> )
             }
         </div>
        </div>

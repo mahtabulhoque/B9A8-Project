@@ -1,25 +1,46 @@
-import { useLoaderData } from "react-router-dom";
+import{useState} from "react";
+import ReadBook from "./ReadBook";
+import WishList from "./WishList";
 
 const ListedBook = () => {
-  const allBook = useLoaderData();
-  console.log(allBook);
+  const [selectedTab, setSelectedTab] = useState("read");
+
+  const handleTabChange = (tab) => {
+    setSelectedTab(tab);
+  };
+
   return (
-    <div className="card lg:card-side bg-base-100 shadow-xl">
-      <figure>
-        <img
-          src="https://daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.jpg"
-          alt="Album"
-        />
-      </figure>
-      <div className="card-body">
-        <h2 className="card-title">New album is released!</h2>
-        <p>Click the button to listen on Spotiwhy app.</p>
-        <div className="card-actions justify-end">
-          <button className="btn btn-primary">Listen</button>
-        </div>
+    <div role="tablist" className="tabs tabs-lifted">
+      {/* Read Tab */}
+      <input
+        type="radio"
+        name="my_tabs_2"
+        role="tab"
+        className="tab"
+        aria-label="Read"
+        checked={selectedTab === "read"} 
+        onChange={() => handleTabChange("read")} // Handle tab change
+      />
+      <div role="tabpanel" className="tab-content bg-base-100 border-base-300 rounded-box p-6">
+        <ReadBook />
+      </div>
+
+      {/* Wishlist Tab */}
+      <input
+        type="radio"
+        name="my_tabs_2"
+        role="tab"
+        className="tab"
+        aria-label="Wish list"
+        checked={selectedTab === "wishlist"} // Set checked based on selectedTab state
+        onChange={() => handleTabChange("wishlist")} // Handle tab change
+      />
+      <div role="tabpanel" className="tab-content bg-base-100 border-base-300 rounded-box p-6">
+        <WishList />
       </div>
     </div>
   );
 };
 
 export default ListedBook;
+

@@ -7,7 +7,7 @@ const SingleBook = ({book}) => {
       <NavLink to={`/book/${bookId}`}>
       <div className="card bg-gray-200 shadow-xl">
         <figure className="px-10 pt-10">
-          <img
+          <img 
             src={image}
             alt=""
             className="rounded-xl"

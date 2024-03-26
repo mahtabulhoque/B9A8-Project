@@ -10,7 +10,7 @@ const Banner = () => {
           </h2>
 
           {/* function button */}
-          <Link to ={'ListedBook'}>
+          <Link to ='/listed-book'>
           <button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-[#23BE0A] text-[#FFFFFF] text-[20px] font-bold">
             View The List
           </button>
