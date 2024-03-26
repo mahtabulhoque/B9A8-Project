@@ -67,7 +67,7 @@ const ReadBook = () => {
                 </div>
               </div>
               <hr className="border-dashed"/>
-              <div className="flex gap-5">
+              <div className="flex gap-5 font-medium">
                 <div>
                 <p className="bg-[#328EFF] rounded-full text-[#FFF] text-center p-3">Category:   {book.category}</p>
                 </div>

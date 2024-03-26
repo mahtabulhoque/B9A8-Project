@@ -15,7 +15,7 @@ const Books = () => {
     return (
        <div>
          <div>
-            <h2 className="text-center py-10 text-[#131313] font-bold text-[40px]">Books : {books.length}</h2>
+            <h2 className="text-center py-10 text-[#131313] font-bold text-[40px]">Books</h2>
         </div>
 
       

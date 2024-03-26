@@ -10,6 +10,10 @@ const ListedBook = () => {
   };
 
   return (
+    <>
+    <div className="py-8">
+    <h2 className="text-center py-10 text-[#131313] font-bold text-[40px] bg-gray-100 rounded-2xl">Book</h2>
+    </div>
     <div role="tablist" className="tabs tabs-lifted">
       {/* Read Tab */}
       <input
@@ -39,6 +43,7 @@ const ListedBook = () => {
         <WishList />
       </div>
     </div>
+    </>
   );
 };
 
