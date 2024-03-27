@@ -15,7 +15,7 @@ const SingleDiary = ({diary}) => {
     </figure>
     <div className="card-body">
       <h2 className="card-title text-[30px] font-bold text-black">{title}</h2>
-      <p className="text-[20px] font-medium text-gray-500">Description: {description}</p>
+      <p className="text-[20px] font-medium text-gray-700">Description: {description}</p>
       <p className="text-[16px] text-red-700 font-semibold">Price: {price}</p>
     </div>
   </div>
