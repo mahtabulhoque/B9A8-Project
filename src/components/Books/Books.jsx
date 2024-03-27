@@ -19,7 +19,7 @@ const Books = () => {
         </div>
 
       
-       <div className="grid grid-cols-3 gap-7">
+       <div className="flex flex-col  lg:grid lg:grid-cols-3 gap-7">
             {
                books.map(book => <SingleBook key={book.bookId} book={book}></SingleBook> )
             }

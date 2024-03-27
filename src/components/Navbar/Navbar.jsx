@@ -8,7 +8,6 @@ const Navbar = () => {
      <li><NavLink to='/chart'>Pages to Read</NavLink></li>
      <li><NavLink to='/movies'> Best Movies</NavLink></li>
      <li><NavLink to='/diary'>Buy Our Diary</NavLink></li>
-     {/* <li><NavLink to='/pages'>404 Page</NavLink></li> */}
   </>
 
   return (
@@ -40,14 +39,14 @@ const Navbar = () => {
             }
           </ul>
         </div>
-        <a className="btn btn-ghost text-red-600 text-5xl font-bold">Bookish</a>
+        <a className="btn btn-ghost text-red-600 text-[25px] lg:text-5xl font-bold">Bookish</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 text-[18px] font-semibold">
          {links}
         </ul>
       </div>
-      <div className="navbar-end gap-5">
+      <div className="navbar-end lg:gap-5 ">
         <a className="btn bg-[#23BE0A] border-none text-[#FFFFFF]">Sign In</a>
         <a className="btn bg-[#59C6D2] text-[#FFFFFF] ">Sign Up</a>
       </div>
