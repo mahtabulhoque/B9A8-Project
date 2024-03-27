@@ -10,8 +10,9 @@ import Home from './components/Home/Home';
 import ListedBook from './components/ListedBook/ListedBook';
 import ErrorPage from './components/ErrorPage/ErrorPage';
 import BookDetails from './components/BooksDetails/BookDetails';
-import CustomChart from './components/CustomChart/CustomChart';
 import Movies from './components/Movies/Movies';
+import PagesToRead from './components/PagesToRead/PagesToRead';
+import Diary from './components/Diary/Diary';
 
 const router = createBrowserRouter([
   {
@@ -30,7 +31,7 @@ const router = createBrowserRouter([
 
       {
         path:'/chart',
-        element:<CustomChart></CustomChart>
+        element:<PagesToRead></PagesToRead>
       },
       {
         element:<ErrorPage></ErrorPage>
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
       {
         path:'/movies',
         element:<Movies></Movies>
+      },
+      {
+        path:'/diary',
+        element:<Diary></Diary>
       },
       {
         path:'/book/:bookId',
