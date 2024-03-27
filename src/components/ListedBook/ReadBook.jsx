@@ -17,7 +17,6 @@ const ReadBook = () => {
   }, [books]);
 
   useEffect(() => {
-    // Fetch books data
     fetch("/bookData.json")
       .then((res) => res.json())
       .then((data) => setBooks(data))
@@ -27,14 +26,6 @@ const ReadBook = () => {
   useEffect(() => {
     getReadBooksFromLS();
   }, [getReadBooksFromLS]);
-
-  //   const handleReadBook = (book) => {
-  //     if (!readBooks.includes(book.bookId)) {
-  //       setReadBooks([...readBooks, book.bookId]);
-  //      } else {
-  //      return;
-  //     }
-  //   };
 
   return (
     <div className=" flex flex-col gap-10 space-y-2">
