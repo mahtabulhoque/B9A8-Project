@@ -31,6 +31,7 @@ const router = createBrowserRouter([
 
       {
         path:'/chart',
+        loader: () => fetch('/bookData.json'),
         element:<PagesToRead></PagesToRead>
       },
       {
