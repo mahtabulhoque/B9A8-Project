@@ -7,7 +7,7 @@ const Diary = () => {
     const [diaries,setDiaries]=useState([]);
 
     useEffect(()=>{
-        fetch('/diary.json')
+        fetch('./diary.json')
         .then(res => res.json())
         .then(data=> setDiaries(data))
     },[])

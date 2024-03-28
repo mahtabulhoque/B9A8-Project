@@ -9,7 +9,7 @@ const Movies = () => {
 
 
     useEffect(()=>{
-        fetch('/movies.json')
+        fetch('./movies.json')
         .then(res=>res.json())
         .then(data=>setMovies(data))
     },[])

@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 const SingleMovie = ({movie}) => {
     const{title,year,genre,director,rating,image,id}=movie;
   return (
-    <div>
+      <div>
         <NavLink to={`/movie/${id}`}>
       <div className="card lg:card-side bg-base-100 shadow-xl p-5">
         <figure>
