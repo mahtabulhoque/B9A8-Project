@@ -62,8 +62,8 @@ const BookDetails = () => {
         </figure>
         <div className="card-body space-y-2">
           <h2
-            className="card-title text-[#131313]
-        text-[40px] font-bold"
+            className="card-title text-[#131313] text-[20px]
+        lg:text-[40px] font-bold"
           >
             {book.bookName}
           </h2>
