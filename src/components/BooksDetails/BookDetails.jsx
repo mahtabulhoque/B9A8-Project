@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
-import { useLoaderData, useParams } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
+
+import {Link, useLoaderData, useParams } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -56,7 +58,11 @@ const BookDetails = () => {
   
   return (
     <div>
+      <Helmet>
+        <title>Books{bookId}</title>
+      </Helmet>
       <div className="card lg:card-side bg-base-100 shadow-xl p-9">
+
         <figure>
           <img src={book.image} alt="Album" />
         </figure>
@@ -129,6 +135,9 @@ const BookDetails = () => {
         </div>
       </div>
       <ToastContainer />
+      <div className="text-center py-10">
+      <Link className="lg:text-[30px] text-[20px] text-white font-semibold bg-gray-600 rounded-xl p-5" to="/">Back to Home</Link>
+      </div>
     </div>
   );
 };

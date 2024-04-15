@@ -1,3 +1,4 @@
+
 import { NavLink } from "react-router-dom";
 
 const SingleBook = ({book}) => {
@@ -24,7 +25,7 @@ const SingleBook = ({book}) => {
             <p>{category}</p>
             <div className="flex justify-center items-center gap-2">
             <p>{rating}</p>
-             <img src="/public/Frame(1).png" alt="" />
+             <img src="./Frame(1).png" alt="" />
             </div>
             
           </div>

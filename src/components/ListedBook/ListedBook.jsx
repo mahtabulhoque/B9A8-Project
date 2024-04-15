@@ -1,6 +1,7 @@
 import { useState } from "react";
 import ReadBook from "./ReadBook";
 import WishList from "./WishList";
+import { Helmet } from "react-helmet-async";
 
 const ListedBook = () => {
   const [selectedTab, setSelectedTab] = useState("read");
@@ -12,6 +13,9 @@ const ListedBook = () => {
   return (
     <>
       <div className="py-8">
+        <Helmet>
+          <title>Listed Book</title>
+        </Helmet>
         <h2 className="text-center py-10 text-[#131313] font-bold text-[40px] bg-gray-100 rounded-2xl">
           Book
         </h2>

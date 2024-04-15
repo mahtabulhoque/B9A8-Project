@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import { useLoaderData } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
+import {Link, useLoaderData } from "react-router-dom";
 import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid,ResponsiveContainer  } from "recharts";
 const colors = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042", "red", "pink"];
 
@@ -42,6 +43,9 @@ const PagesToRead = () => {
 
   return (
     <ResponsiveContainer width="100%" height={500}>
+      <Helmet>
+        <title>Rechart</title>
+      </Helmet>
       <BarChart
        className="bg-gray-200 rounded-3xl lg:p-6 lg:my-10"
         // width={1000}
@@ -69,6 +73,9 @@ const PagesToRead = () => {
         </Bar>
       </BarChart>
       <div className="font-bold text-center py-4 text-[16px] lg:text-3xl"><h2>Readead Book Statistics</h2></div>
+      <div className="text-center py-10">
+      <Link  className="lg:text-[30px] text-[20px] text-white font-semibold bg-gray-500 rounded-xl p-5" to="/">Back to Home</Link>
+      </div>
       </ResponsiveContainer>
 
      

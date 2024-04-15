@@ -1,11 +1,16 @@
+import { Helmet } from "react-helmet-async";
 import { NavLink } from "react-router-dom";
 
 const SingleMovie = ({movie}) => {
     const{title,year,genre,director,rating,image,id}=movie;
   return (
       <div>
+      <Helmet>
+          <title>Movies</title>
+        </Helmet>
         <NavLink to={`/movie/${id}`}>
       <div className="card lg:card-side bg-base-100 shadow-xl p-5">
+        
         <figure>
           <img
             src={image}

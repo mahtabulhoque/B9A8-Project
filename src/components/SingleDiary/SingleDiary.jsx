@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { NavLink } from "react-router-dom";
 
 const SingleDiary = ({diary}) => {
@@ -7,6 +8,9 @@ const SingleDiary = ({diary}) => {
     <div>
     <NavLink to={`/diary/${id}`}>
   <div className="card lg:card-side bg-gray-300 shadow-xl p-5">
+    <Helmet>
+      <title>Diary</title>
+    </Helmet>
     <figure>
       <img
         src={image}

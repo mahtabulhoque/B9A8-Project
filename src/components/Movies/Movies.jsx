@@ -5,7 +5,7 @@ const Movies = () => {
 
 
     const[movies, setMovies]= useState([])
-    console.log(movies);
+    // console.log(movies);
 
 
     useEffect(()=>{
